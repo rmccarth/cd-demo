@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-interns 
+  labels:
+    app: hello-interns 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: hello-interns 
+  template:
+    metadata:
+      labels:
+        app: hello-interns 
+    spec:
+      containers:
+      - name: hello-interns 
+        image: rmccarth/hello-interns:latest 
+        ports:
+        - containerPort: 80
+
