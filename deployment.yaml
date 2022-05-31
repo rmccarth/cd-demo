@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-interns 
-        image: rmccarth/hello-interns:bff83f17ceb1679487178dd23865fddad5afee1e
+        image: rmccarth/hello-interns:a6ad6013eb763e78cd206c6233da884f428edc74
         ports:
         - containerPort: 80
 
