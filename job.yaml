@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-intern-job 
+spec:
+  template:
+    spec:
+      containers:
+      - name: hello-intern-job 
+        image: rmccarth/hello-interns:1.0.0 
+      restartPolicy: Never
+  backoffLimit: 4
