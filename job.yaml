@@ -7,6 +7,6 @@ spec:
     spec:
       containers:
       - name: hello-intern-job 
-        image: rmccarth/hello-interns:7aaf1ba456f2fe8f47d10b113b72f6dfb117009d
+        image: rmccarth/hello-interns:38f7fddc24e4682a42d2017a03b007c7b4f50add
       restartPolicy: Never
   backoffLimit: 4
